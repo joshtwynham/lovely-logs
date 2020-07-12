@@ -1,0 +1,9 @@
+/Users/josh/Projects/LoggingFramework/LoggingFramework/bin/Debug/netstandard2.1/Logging.deps.json
+/Users/josh/Projects/LoggingFramework/LoggingFramework/bin/Debug/netstandard2.1/Logging.dll
+/Users/josh/Projects/LoggingFramework/LoggingFramework/bin/Debug/netstandard2.1/Logging.pdb
+/Users/josh/Projects/LoggingFramework/LoggingFramework/obj/Debug/netstandard2.1/Logging.AssemblyInfoInputs.cache
+/Users/josh/Projects/LoggingFramework/LoggingFramework/obj/Debug/netstandard2.1/Logging.AssemblyInfo.cs
+/Users/josh/Projects/LoggingFramework/LoggingFramework/obj/Debug/netstandard2.1/Logging.csproj.CoreCompileInputs.cache
+/Users/josh/Projects/LoggingFramework/LoggingFramework/obj/Debug/netstandard2.1/Logging.dll
+/Users/josh/Projects/LoggingFramework/LoggingFramework/obj/Debug/netstandard2.1/Logging.pdb
+/Users/josh/Projects/LoggingFramework/LoggingFramework/obj/Debug/netstandard2.1/Logging.csprojAssemblyReference.cache

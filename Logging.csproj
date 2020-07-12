@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <PackageId>LovelyLogs</PackageId>
+    <PackageVersion>1.0.1</PackageVersion>
+    <Authors>Josh Twynham</Authors>
+    <Description>A  framework for use in C# within the .NET framework.</Description>
+    <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
+  </PropertyGroup>
+
+</Project>
