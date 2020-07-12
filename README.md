@@ -1,9 +1,9 @@
 # LovelyLogs
----
+
 LovelyLogs is a logging framework for use in C# within the .NET framework.
 
 ## Installation
----
+
 ### Install Nuget package via command line
 
 macOS/Linux
@@ -19,7 +19,7 @@ PM> Install-Package LovelyLogs
 ```
 
 ## Usage
----
+
 ### Setup
 
 All you need to do to start logging is create a reference to `ILog` by calling `LogManager.GetLogger(string loggerName)`. The `loggerName` parameter is normally the name of the calling class where the logger is created. This will create a logger with that will record log messages of all levels to the console by default.
@@ -41,7 +41,7 @@ class LoggingTest
 
 ### Appenders
 
-Appenders detemine where the logs are recorded. They are added using the `AddAppender(Appender appender)` method. There are three types of `Appender`: `ConsoleAppender`, `FileAppender` and `RollingFileAppender`. Every logger comes with a `ConsoleAppender` by default, which can be removed using the method `RemoveAppender(Appender appender)`. The `FileAppender` is constructed with the directory of a .txt file you would like to use to record all logs to, and the `RollingFileAppender` is constructed with a directory that will begin logging in a .txt titled with the current date and resume logging in a new file when the date changes.
+Appenders determine where the logs are recorded. They are added using the `AddAppender(Appender appender)` method. There are three types of `Appender`: `ConsoleAppender`, `FileAppender` and `RollingFileAppender`. Every logger comes with a `ConsoleAppender` by default, which can be removed using the method `RemoveAppender(Appender appender)`. The `FileAppender` is constructed with the directory of a .txt file you would like to use to record all logs to, and the `RollingFileAppender` is constructed with a directory that will begin logging in a .txt titled with the current date and resume logging in a new file when the date changes.
 
 ### Formatting logs
 
@@ -87,9 +87,9 @@ For example, the above configuration will result in the following output:
 
 
 ## Implementation Choices
----
+
 ### The LogManager and Multiple Loggers
-I decided to use a `LogManager` class so that multiple loggers could be easily added and managed (one for each class that requires logging functionality). I implemented the class using the singleton pattern as it made the process significantly easier and would was easier to make it thread safe, as potentially a large number of classes could use it. The `LogManager` is laziliy initialised with the `Lazy<T>` class allowing for safe access from multiple threads.
+I decided to use a `LogManager` class so that multiple loggers could be easily added and managed (one for each class that requires logging functionality). I implemented the class using the singleton pattern as it made the process significantly easier and would was easier to make it thread safe, as potentially a large number of classes could use it. The `LogManager` is lazily initialised with the `Lazy<T>` class allowing for safe access from multiple threads.
 
 
 ### Configuration
