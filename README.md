@@ -9,13 +9,13 @@ LovelyLogs is a logging framework for use in C# within the .NET framework.
 macOS/Linux
 
 ```bash
-> dotnet add package LovelyLogs --version 1.0.0
+> dotnet add package LovelyLogs
 ```
 
 Package Manager Console (Windows):
 
 ```cmd
-PM> Install-Package LovelyLogs -Version 1.0.0
+PM> Install-Package LovelyLogs
 ```
 
 ## Usage
