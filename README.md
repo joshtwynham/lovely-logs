@@ -22,21 +22,26 @@ PM> Install-Package LovelyLogs
 
 ### Setup
 
-All you need to do to start logging is create a reference to `ILog` by calling `LogManager.GetLogger(string loggerName)`. The `loggerName` parameter is normally the name of the calling class where the logger is created. This will create a logger with that will record log messages of all levels to the console by default.
+All you need to do to start logging is use the `LovelyLogs` namespace and create a reference to `ILog` by calling `LogManager.GetLogger(string loggerName)`. The `loggerName` parameter is normally the name of the calling class where the logger is created. This will create a logger with that will record log messages of all levels to the console by default.
 ```c
-class LoggingTest
+using LovelyLogs;
+
+namespace MyApplication
+{
+    class MyProgram
     {
         private static readonly ILog log = LogManager.GetLogger(typeof(LoggingTest).ToString());
 
         static void Main(string[] args)
         {
-            log.Debug("Debug message");
-            log.Error("Error message");
-            log.Info("Info message");
-            log.Warn("Warning message");
-            log.Fatal("Fatal message");
+            log.Debug("Debug information");
+            log.Info("62.3% increase in speed");
+            log.Warn("Potentially harmful situation!");
+            log.Error("Normal execution may not be possible.");
+            log.Fatal("Application may terminate!");
         }
     }
+}
 ```
 
 ### Appenders
